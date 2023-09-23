@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <style>
+    .dropdown-content {
+	  display: none;
+	}
+	.dropdown-content.show {
+	  display: block;
+	}
+    .skill-change ul, { 
+	  list-style-type: disc !important; 
+	  margin-left: -20px;
+	}
+	
+	ul.bullet-list {
+	  list-style-type: disc;
+	}
+	
+	table {
+	  background-color: rgba(130, 200, 130, 1); 
+	  border-collapse: collapse;
+	  border: 1px solid black;
+	}	
+	
+	table server-info {
+	  border-collapse: collapse;
+	}
+	
+	td {
+	  padding: 15px;
+	  border: 1px solid black;
+	}
+	
+	th {
+	  text-align: center;
+	}
+	
+	body {
+	  background-image: url("background.jpg"); 
+	  background-size: cover;
+	  background-attachment: fixed;
+	}
+	
+	.container {
+	  background-color: rgba(130, 180, 130, 0.9); 
+	  padding: 10px; 
+	  margin: auto;
+	  width: 90%; 
+	  border: 2px solid rgba(0, 0, 0, 0.2); 
+	  border-radius: 10px;
+	}
+	
+	.custom-table td,
+	.custom-table tr {
+	  padding-right: 20px;
+	  padding-bottom: 1px;
+	  border: 1px solid transparent; /* Adjust the border properties as needed */
+	}
+    body {
+      font-family: Georgia, serif;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <p><span style="font-size:26px"><strong>NEKOMIMI ONLINE</strong></span></p>
+  <hr />
+  <div class="container">
+	  <h1>Server Info</h1>
+		<table class="custom-table">
+		  <tbody>
+			<tr>
+			  <td>Rates</td>
+			  <td>Base 7x/Job 7x/Item 35x Logarithmic</td>
+			</tr>
+			<tr>
+			  <td>Exp Curve</td>
+			  <td>Flattened curve for Pre-Transcendent Jobs for levels 90-99 </td>
+			</tr>
+			<tr>
+			  <td>Baby Classes</td>
+			  <td>90 stats limit, raised HP/SP penalty to 90% and a +20 Flee bonus</td>
+			</tr>
+			<tr>
+			  <td>Warps</td>
+			  <td>Warps are made more uniform, removed Juno Teleporter. Increased Airship speed, and added warps to airports.</td>
+			</tr>
+			<tr>
+			  <td>Resets</td>
+			  <td>Resets are available weekly. Increasing Zeny Costs at higher levels for the max of 10m at 99/70.</td>
+			</tr>
+			<tr>
+			  <td>Episode Template and Content</td>
+			  <td>Episode 13.2, however No Satan Morroc and New World access. Also, restored old Morroc and fields.</td>
+			</tr>
+			<tr>
+			  <td>Dungeon Access</td>
+			  <td>Pay for dungeon access without quest.<td>
+			</tr>
+			<tr>
+			  <td>Mechanics</td>
+			  <td>Pre-Renewal sytle</td>
+			</tr>
+			<tr>
+			  <td>Exp Curve</td>
+			  <td>Flattened curve for Pre-Transcendent Jobs for levels 90-99 </td>
+			</tr>
+			<tr>
+			  <td>Commands</td>
+			  <td>Arealoot</td>
+			</tr>
+			<tr>
+			  <td>Platinum Skills</td>
+			  <td>Platinum Skill unlocks at 10k Zeny per skill.</td>
+			</tr>
+			<tr>
+			  <td>Costumes</td>
+			  <td>Free!</td>
+			</tr>			
+		  </tbody>
+		</table>
+	  <h1>Beta!</h1>
+	  Gameplay Changes is done so far. Quests removal, Old Morroc, and dungeon access isn't done yet.
+		<table class="custom-table">
+		  <tbody>
+			<tr>
+			  <td>Downloads</td>
+			  <td>
+				<ul class="skill-change">
+					<li class="skill-change"><a href="https://drive.google.com/file/d/1DQbaTT-bPokhKSHPV1YKkPWKxC09m5cH/view?usp=drive_link">Google Drive</a></li>
+					<li class="skill-change"><a href="https://www.mediafire.com/file/gm4urzglt9xcpus/NekomimiOnline.zip/file">Mediafire</a></li>
+					<li class="skill-change"><a href="https://mega.nz/file/OypCnZxZ#64ji8SAg584_Y65tDGyWWKyCjpyOh3xPmP3ta_qQLMM">MEGA</a></li>
+				</ul>
+			  </td>
+			</tr>
+			<tr>
+			  <td>Commands for the beta is enabled in all accounts:</td>
+			  <td>				
+				<ul class="skill-change">
+					<li class="skill-change">@item <id/name> - Spawns item id/name</li>
+					<li class="skill-change">@blevel <number> - Increases Base level by number. Can use negatives as well.</li>
+					<li class="skill-change">@jlevel <number> - Increases Job level by number. Can use negatives as well.</li>
+					<li class="skill-change">@spawn <id/name> - Spawns monster.</li>
+					<li class="skill-change">@job <name> - Changes to named job.</li>
+					<li class="skill-change">@zeny <amount> - Increases Zeny.</li>
+					<li class="skill-change">@killmonster - kills all monsters on field.</li>
+					<li class="skill-change">@go <number/map name> - Warp.</li>
+					<li class="skill-change">@warp <map name> - Warp to specific map.</li>
+					<li class="skill-change">@refine <item id> <refine value> - Auto refines.</li>
+				</ul>
+			  </td>
+			</tr>
+			<tr>
+			  <td>Registration</td>
+			  <td>
+				<ul class="skill-change">
+					Login using your desired using name plus "_m" or "_f" at the end (this choice this doesn't really matter) and password. Your account is now created.
+				</ul>
+			  </td>
+			</tr>
+		  </tbody>
+		</table>
+	  
+	
+	  <h1>Gameplay Changes</h1>
+	  <small>Click on the text to reveal details. Also, still under construction so some classes are missing, refer to <a href="https://pastebin.com/FE15RE5j">this</a> for a more complete list.</small>
+	  <div class="dropdown" :>
+		<span class="dropdown-text" id="sd-text"> <h2>Swordsman Classes</h2></span>	
+		<hr />			
+		<div class="dropdown-content"  id="sd-content">
+		  <ul style="margin-left: 30px; list-style-type: none !important; ">
+			<li>
+			  <h3>Swordsman</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Sword Mastery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
+							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases ASPD per level by 1% per skill level</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Two-Handed Sword Mastery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
+							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases CRIT per level by +1 per skill level</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Increase HP Recovery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Triple Base Regeneration (150 at level 10)</li>
+							<li class="skill-change">Increase Healing Item Recover bonus by 1% per 2 INT</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Bash</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">SP requirement is now 2+1 per skill level (12 SP at level 10)</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Magnum Break</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Range increased by 2 cell</li>
+							<li class="skill-change">SP reduced to 18 SP per cast</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Endure</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Provides additional +5 Soft DEF per level</li>
+							<li class="skill-change">Increase endured hits by 7 + 1 per 2 levels</li>
+						</ul>
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+			
+			<li>			
+			<h3>Knight</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Two-Hand Quicken</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Increases CRIT by 2 per level</li>
+							<li class="skill-change">Increases FLEE by 2 per level</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Two-Handed Sword Mastery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">No gutterline glitch</li>
+							<li class="skill-change">Will always hit twice as normal</li>
+							<li class="skill-change">Change Requirment to Bash Lvl 10 and Magnum Break Lvl. 10</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+				      <td>Brandish Spear</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Damage is now 100 + (50 * skill level) (600% at max level)</li>
+							<li class="skill-change">Increase SP Cost to 20</li>
+							<li class="skill-change">Decrease cast time to 0.5 seconds</li>
+							<li class="skill-change">Requirements changed to Riding Level 1 and Spear Mastery Level 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Spear Stab</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduce skill to 5 levels, change damage to 100 + (40 * Skill Level) from 100 + (20 * Skill level) (Basically same damage)</li>
+							<li class="skill-change">Requirements changed to Spear Mastery Level 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Spear Boomerang</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements changed to Spear Mastery Level 3</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>One Hand Quicken</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Changed to a normal skill, with 5 levels.</li>
+							<li class="skill-change">Requires Sword Mastery Level 10</li>
+							<li class="skill-change">ASPD down from 30% to 20% increase</li>
+							<li class="skill-change">Increase AGL by skill level</li>
+						</ul>
+					  </td>
+					</tr>					
+					<tr>
+					  <td>Spear Mastery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
+							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increase Mounted bonus attack from +1 per level to +2</li>
+							<li class="skill-change">Attacks ignores 1 DEF per level.</li>
+						</ul>
+					  </td>
+					</tr>			
+					<tr>
+					  <td>Charge Attack</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">No longer hard limited to 300%</li>
+							<li class="skill-change">Reduced cast time from 0.3 to 0.1 seconds.</li>
+						</ul>
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+				
+			<li>			
+			<h3>Lord Knight</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Aura Blade</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Change Bonus to Damage to Base Level x1.2/x1.4/x1.6/x1.8/x2</li>
+							<li class="skill-change">Gains bonus to ATK equal to INT (This is a simple ATK bonus, not a def piercing one)</li>
+							<li class="skill-change">Change duration to 30 + (30 * Skill Level) seconds (180 seconds at Max Level) from 20 + (20 * Skill level) seconds</li>
+							<li class="skill-change">Change requirements to Bash Lvl. 8 and Magnum Break Level 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Parrying</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Changed requirements to Two-Handed Sword Mastery Level 10 and Two-Hand Quicken Level 3</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+				      <td>Concentration</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Attack bonus raised to 10 + (5 * skill level)(Max 35% at max level) from 5 * Skill level percent</li>
+							<li class="skill-change">Requirements Change to Increase HP Recovery lvl 8, Riding Lvl. 1 and Cavalry Mastery 5.</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+				      <td>Spiral Pierce</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Now Spear Mastery Level 10, Riding Lvl 1, Pierce Lvl. 5 and Cavalry Master Level 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Head Crush</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements is now Riding Level 1, Cavalry Master Level 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Joint Beat</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements is now only Head Crush Lv. 3</li>
+						</ul>
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+			
+			<li>			
+			<h3>Crusader</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Divine Protection</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduced to level 5</li>
+							<li class="skill-change">Bonus Def is now (10 * Skill Level) (Max of +50 Soft Def)</li>
+							<li class="skill-change">Bonus Def affects other races by 5 per level (Max of +25 Soft Def)</li>
+							<li class="skill-change">No requirements</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Demon Bane</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduced to level 5</li>
+							<li class="skill-change">Bonus ATK is now  10 * Skill Level (Max of +50 Atk)</li>
+							<li class="skill-change">Bonus ATK affects other races by 4 per level (Max of +20 ATK)</li>
+							<li class="skill-change">No requirements </li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+				      <td>Heal</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requires Cure Lvl 1</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+				      <td>Cure</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Now Spear Mastery Level 10, Riding Lvl 1, Pierce Lvl. 5 and Cavalry Master Level 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Spear Mastery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
+							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increase Mounted bonus attack from +1 per level to +2</li>
+							<li class="skill-change">Attacks ignores 1 DEF per level.</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Faith</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduced to 5 levels</li>
+							<li class="skill-change">Max HP increase is now 500 * skill level</li>
+							<li class="skill-change">10 * skill level resistance to Holy Monsters</li>
+						</ul>
+					  </td>
+					</tr>	
+					<tr>
+					  <td>Shield Charge</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Increased from 100% + 20% per skill level to 200% + 20% per skill level (Max of 300%)</li>
+						</ul>
+					  </td>
+					</tr>	
+					<tr>
+					  <td>Holy Cross</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements is now Faith Lv. 3</li>
+							<li class="skill-change">Damage increased from 100% + 35% per skill level to 300% + 30% per skill level. (Max 600%)</li>
+							<li class="skill-change">SP cost is now 5 + Skill Level</li>
+						</ul>
+					  </td>
+					</tr>	
+					<tr>
+					  <td>Grand Cross</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Can now hit stacked enemies 3 times.</li>
+							<li class="skill-change">Now Requries Holy Cross Lv. 5, Faith Lv. 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Providence</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduced damage is now 5 + (5 skill level)% (Max of 25%) from 5 * skill level.</li>
+							<li class="skill-change">Add Dark, Ghost and Undead to reduced damage.</li>
+							<li class="skill-change">Requires Divine Protection 5.</li>
+						</ul>
+					  </td>
+					</tr>	
+					<tr>
+					  <td>Spear Quicken</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Works with 1 handed spear.</li>
+							<li class="skill-change">Increase ATK by 1.5% per level (rounded down).</li>
+							<li class="skill-change">Increase Hit by 3 per level.</li>
+						</ul>
+					  </td>
+					</tr>	
+				  </tbody>
+				</table>
+			  </div>
+			</li>	
+			
+			<li>			
+			<h3>Paladin</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Pressure</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements are Faith Lv. 5</li>
+							<li class="skill-change">Halve Cast Delay and Cast Time</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Gospel</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Can move while casting (Movement will be slowed down)</li>
+							<li class="skill-change">Requirements are Faith Lvl 5, Divine Protection Lv. 5, Demon Bane Lv. 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+				      <td>Sacrifice</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Damage is now 100 + (10 * (skill level ) (Max 1.5x  HP sacrificed to damage) from 100 + (10 * (skill level - 1)) (Max 1.4x HP sacrificed to damage</li>
+							<li class="skill-change">Add VIT to damage</li>
+							<li class="skill-change">Requirements are Faith Lvl 5, Devotion Lv. 3</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+				      <td>Shield Chain</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduce SP Cost to 15 +  2 * Skill level from 25 + 3 * Skill Level</li>
+							<li class="skill-change">Cast time and after cast delay reduced to 0.7 seconds from 1 second</li>
+						</ul>
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+			
+		  </ul>
+		 </div>
+	    </div>
+   
+		<span class="dropdown-text" id="mg-text"> <h2>Magician Classes</h2></span>
+		<hr />		
+		<div class="dropdown-content" id="mg-content">
+		  <ul style="margin-left: 30px; list-style-type: none !important; ">
+			<li>
+			  <h3>Magician</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Increase SP Recovery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Increase SP Recovery to +6 SP recovery per second per level</li>
+							<li class="skill-change">SP recovery from items increased to 10% per level</li>
+							<li class="skill-change">Increases MATK by + 3 per level</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Napalm Beat</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Damage increased to 180% MATK to Level 10</li>
+							<li class="skill-change">Does not split damage</li>
+							<li class="skill-change">Halve Cast Time and After Cast Delay</li>
+							<li class="skill-change">SP changed to 8/10/12/15</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Safety Wall</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements changed to Napalm Beat 5, Soul Strike 3</li>
+							<li class="skill-change">Cast time to 0.8 seconds at level 10</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Bash</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">SP requirement is now 2+1 per skill level (12 SP at level 10)</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Soul Strike</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements changed to Napalm Beat 3</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Frost Driver</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements changes to Frost Bolt 3</li>
+							<li class="skill-change">Increase damage to 250% at level 10</li>
+							<li class="skill-change">Cast Delay reduced to 1 second</li>
+							<li class="skill-change">Increase SP Cost</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Fire Ball</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements changed to Fire Bolt 3</li>
+							<li class="skill-change">Increase damage to 200% at level 10</li>
+							<li class="skill-change">Decrease After Cast and Cast to 0.8 at level 10</li>
+							<li class="skill-change">Increase SP</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Thunderstorm</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Decrease SP to 22 + (Skill Level * 5)</li>
+							<li class="skill-change">Requirements changed to Lightning Bolt 3</li>
+						</ul>
+					  </td>
+					</tr>					
+					<tr>
+					  <td>Fire Wall</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Skill is now level selectable</li>
+							<li class="skill-change">Requirements changed to Fireball Level 3</li>
+						</ul>
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+			
+			<li>			
+			<h3>Wizard</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Frost Nova</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Increase AOE to 9x9</li>
+							<li class="skill-change">Increases FLEE by 2 per level</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Storm Gust</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements changed to Frost Nova 3</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Lord of Vermillion</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements changed to Jupitel Thunder 3</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Sight Trasher</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Increase AOE to 9x9</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Meteor Storm</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements changed to Sight Trasher 3</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Quagmire</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Skill is now level selectable.</li>
+						</ul>
+					  </td>
+					</tr>					
+					<tr>
+					  <td>Fire Pillar</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Removed gemstone requirement</li>
+						</ul>
+					  </td>
+					</tr>			
+					<tr>
+					  <td>Ice Wall</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Skill is now level selectable.</li>
+						</ul>
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+			<li>			
+			<h3>High Wizard</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Napalm Vulcan</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Increase area by 5x5</li>
+							<li class="skill-change">Hits increased to 2  * Skill level</li>
+							<li class="skill-change">Cast and After Cast delay now increases per skill level</li>
+							<li class="skill-change">Increase SP to 20 + ( 10 * Skill Level)</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Gravitation Field</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduce cast time to 3 seconds</li>
+							<li class="skill-change">Increase Max Damage to 1500 at Max Level</li>
+							<li class="skill-change">Increase Duration to 8/9/10/11/12</li>
+						</ul>
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+			<li>			
+			<h3>Sage</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Sense</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Provides 5% MDEF Pierce</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Advance Book</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
+							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases ASPD per level by 1% per skill level</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Free Cast</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduced to 5 levels</li>
+							<li class="skill-change">100% movement on level 10</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Cure</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Now Spear Mastery Level 10, Riding Lvl 1, Pierce Lvl. 5 and Cavalry Master Level 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Spear Mastery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
+							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increase Mounted bonus attack from +1 per level to +2</li>
+							<li class="skill-change">Attacks ignores 1 DEF per level.</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Faith</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduced to 5 levels</li>
+							<li class="skill-change">Max HP increase is now 500 * skill level</li>
+							<li class="skill-change">10 * skill level resistance to Holy Monsters</li>
+						</ul>
+					  </td>
+					</tr>	
+					<tr>
+					  <td>Shield Charge</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Increased from 100% + 20% per skill level to 200% + 20% per skill level (Max of 300%)(</li>
+						</ul>
+					  </td>
+					</tr>	
+					<tr>
+					  <td>Holy Cross</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements is now Faith Lv. 3</li>
+							<li class="skill-change">Damage increased from 100% + 35% per skill level to 300% + 30% per skill level. (Max 600%)</li>
+							<li class="skill-change">SP cost is now 5 + Skill Level</li>
+						</ul>
+					  </td>
+					</tr>	
+					<tr>
+					  <td>Grand Cross</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Can now hit stacked enemies 3 times.</li>
+							<li class="skill-change">Now Requries Holy Cross Lv. 5, Faith Lv. 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Providence</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduced damage is now 5 + (5 skill level)% (Max of 25%) from 5 * skill level.</li>
+							<li class="skill-change">Add Dark, Ghost and Undead to reduced damage.</li>
+							<li class="skill-change">Requires Divine Protection 5.</li>
+						</ul>
+					  </td>
+					</tr>	
+					<tr>
+					  <td>Spear Quicken</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Works with 1 handed spear.</li>
+							<li class="skill-change">Increase ATK by 1.5% per level (rounded down).</li>
+							<li class="skill-change">Increase Hit by 3 per level.</li>
+						</ul>
+					  </td>
+					</tr>	
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+			
+			<li>			
+			<h3>Paladin</h3>
+			  <div id="table1" class="table-container active">
+				<table>
+				  <thead>
+					<tr>
+					  <th>Skill Name</th>
+					  <th>Change</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Pressure</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Requirements are Faith Lv. 5</li>
+							<li class="skill-change">Halve Cast Delay and Cast Time</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Gospel</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Can move while casting (Movement will be slowed down)</li>
+							<li class="skill-change">Requirements are Faith Lvl 5, Divine Protection Lv. 5, Demon Bane Lv. 5</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Sacrifice</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Damage is now 100 + (10 * (skill level ) (Max 1.5x  HP sacrificed to damage) from 100 + (10 * (skill level - 1)) (Max 1.4x HP sacrificed to damag</li>
+							<li class="skill-change">Add VIT to damage</li>
+							<li class="skill-change">Requirements are Faith Lvl 5, Devotion Lv. 3</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Shield Chain</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduce SP Cost to 15 +  2 * Skill level from 25 + 3 * Skill Level</li>
+							<li class="skill-change">Cast time and after cast delay reduced to 0.7 seconds from 1 second</li>
+						</ul>
+					  </td>
+					</tr>
+				  </tbody>
+				</table>
+			  </div>
+			</li>
+			
+		  </ul>
+		</div>
+		</div>
+	  </div>
+  
+	  
+  <script>
+  $(document).ready(function(){
+  
+    $("#sd-text").click(function (event) {
+		if(  $("#sd-content").hasClass("show")){
+			$("#sd-content").removeClass("show");		
+		}
+		else{
+			$("#sd-content").addClass("show");		
+		}
+    });
+  
+    $("#mg-text").click(function (event) {
+		if(  $("#mg-content").hasClass("show")){
+			$("#mg-content").removeClass("show");		
+		}
+		else{
+			$("#mg-content").addClass("show");		
+		}
+    });
+	
+  });
+  </script>
+</body>
+</html>
