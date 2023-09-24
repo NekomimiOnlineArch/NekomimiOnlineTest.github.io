@@ -57,7 +57,7 @@
 	.custom-table tr {
 	  padding-right: 20px;
 	  padding-bottom: 1px;
-	  border: 1px solid transparent; /* Adjust the border properties as needed */
+	  border: 1px solid rgba(0, 0, 0, 0.2); /* Adjust the border properties as needed */
 	}
     body {
       font-family: Georgia, serif;
@@ -79,15 +79,15 @@
 			</tr>
 			<tr>
 			  <td>Exp Curve</td>
-			  <td>Flattened curve for Pre-Transcendent Jobs for levels 90-99 </td>
+			  <td>Flattened ex curve for Pre-Transcendent Jobs for levels 90-99 </td>
 			</tr>
 			<tr>
 			  <td>Baby Classes</td>
-			  <td>90 stats limit, raised HP/SP penalty to 90% and a +20 Flee bonus</td>
+			  <td>Raised stat cap to 90, raised Max HP/Max SP to 90% and has a +20 Flee bonus</td>
 			</tr>
 			<tr>
 			  <td>Warps</td>
-			  <td>Warps are made more uniform, removed Juno Teleporter. Increased Airship speed, and added warps to airports.</td>
+			  <td>Warps are made more uniform, removed Juno Teleporter. Increased Airship speed, and added warps to airports in their cities (You can warp to Juno airport from Juno Kafras).</td>
 			</tr>
 			<tr>
 			  <td>Resets</td>
@@ -95,11 +95,11 @@
 			</tr>
 			<tr>
 			  <td>Episode Template and Content</td>
-			  <td>Episode 13.2, however No Satan Morroc and New World access. Also, restored old Morroc and fields.</td>
+			  <td>Episode 13.2, however No Satan Morroc and New World access (for now). Also, restored old Morroc and fields.</td>
 			</tr>
 			<tr>
 			  <td>Dungeon Access</td>
-			  <td>Pay for dungeon access without quest.<td>
+			  <td>Pay for dungeon access if without quest.<td>
 			</tr>
 			<tr>
 			  <td>Mechanics</td>
@@ -130,11 +130,11 @@
 			  <td>15 levels apart maximum. EXP increases the more party members you have.</td>
 			</tr>	
 			<tr>
-			  <td>Experimental Changes</td>
+			  <td>Experimental Changes (Means this is prone to being changed, even after the Beta)</td>
 			  <td>
 				<ul class="skill-change">
 					<li class="skill-change">Max ASPD: 193</li>
-					<li class="skill-change">Change Target (Attack) behavior removed   </li>
+					<li class="skill-change">Change Target (Attack) behavior removed</li>
 				</ul></td>
 			</tr>				
 		  </tbody>
@@ -204,8 +204,8 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
-							<li class="skill-change">Increases ASPD per level by 1% per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
+							<li class="skill-change">Increases ASPD per level to 1% per skill level</li>
 						</ul>
 					  </td>
 					</tr>
@@ -214,8 +214,8 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
-							<li class="skill-change">Increases CRIT per level by +1 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
+							<li class="skill-change">Increases CRIT per level to +1 per skill level</li>
 						</ul>
 					  </td>
 					</tr>
@@ -224,7 +224,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Triple Base Regeneration (150 at level 10)</li>
-							<li class="skill-change">Increase Healing Item Recover bonus by 1% per 2 INT</li>
+							<li class="skill-change">Increase Healing Item Recover bonus to 1% per 2 INT</li>
 						</ul>
 					  </td>
 					</tr>
@@ -232,7 +232,7 @@
 					  <td>Bash</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">SP requirement is now 2+1 per skill level (12 SP at level 10)</li>
+							<li class="skill-change">SP cost is now 2+Skill Level SP (12 SP at level 10)</li>
 						</ul>
 					  </td>
 					</tr>
@@ -241,7 +241,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Range increased by 2 cell</li>
-							<li class="skill-change">SP reduced to 18 SP per cast</li>
+							<li class="skill-change">SP cost reduced to 18 SP at all levels</li>
 						</ul>
 					  </td>
 					</tr>
@@ -249,8 +249,8 @@
 					  <td>Endure</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Provides additional +5 Soft DEF per level</li>
-							<li class="skill-change">Increase endured hits by 7 + 1 per 2 levels</li>
+							<li class="skill-change">Provides additional +5 Soft DEF per Skill Level</li>
+							<li class="skill-change">Increase endured hits by 7 + 1 per 2 Skill Levels (Max 12)</li>
 						</ul>
 					  </td>
 					</tr>
@@ -274,8 +274,8 @@
 					  <td>Two-Hand Quicken</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Increases CRIT by 2 per level</li>
-							<li class="skill-change">Increases FLEE by 2 per level</li>
+							<li class="skill-change">Increases CRIT by +2 per Skill Level</li>
+							<li class="skill-change">Increases FLEE by +2 per Skill Level</li>
 						</ul>
 					  </td>
 					</tr>
@@ -283,9 +283,9 @@
 					  <td>Two-Handed Sword Mastery</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">No gutterline glitch</li>
-							<li class="skill-change">Will always hit twice as normal</li>
-							<li class="skill-change">Change Requirment to Bash Lvl 10 and Magnum Break Lvl. 10</li>
+							<li class="skill-change">Removed Gutter Lines</li>
+							<li class="skill-change">Will always hit twoce</li>
+							<li class="skill-change">Change Requirements to Bash Lvl 10 and Magnum Break Lvl. 10</li>
 						</ul>
 					  </td>
 					</tr>
@@ -323,7 +323,7 @@
 						<ul class="skill-change">
 							<li class="skill-change">Changed to a normal skill, with 5 levels.</li>
 							<li class="skill-change">Requires Sword Mastery Level 10</li>
-							<li class="skill-change">ASPD down from 30% to 20% increase</li>
+							<li class="skill-change">ASPD increase changed to 20%</li>
 							<li class="skill-change">Increase AGL by skill level</li>
 						</ul>
 					  </td>
@@ -333,7 +333,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">Increase Mounted bonus attack from +1 per level to +2</li>
 							<li class="skill-change">Attacks ignores 1 DEF per level.</li>
 						</ul>
@@ -343,7 +343,7 @@
 					  <td>Charge Attack</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">No longer hard limited to 300%</li>
+							<li class="skill-change">No longer hard capped to 300%</li>
 							<li class="skill-change">Reduced cast time from 0.3 to 0.1 seconds.</li>
 						</ul>
 					  </td>
@@ -368,7 +368,7 @@
 					  <td>Aura Blade</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Change Bonus to Damage to Base Level x1.2/x1.4/x1.6/x1.8/x2</li>
+							<li class="skill-change">Change Damage to Base Level x1.2/x1.4/x1.6/x1.8/x2</li>
 							<li class="skill-change">Gains bonus to ATK equal to INT (This is a simple ATK bonus, not a def piercing one)</li>
 							<li class="skill-change">Change duration to 30 + (30 * Skill Level) seconds (180 seconds at Max Level) from 20 + (20 * Skill level) seconds</li>
 							<li class="skill-change">Change requirements to Bash Lvl. 8 and Magnum Break Level 5</li>
@@ -475,7 +475,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">Increase Mounted bonus attack from +1 per level to +2</li>
 							<li class="skill-change">Attacks ignores 1 DEF per level.</li>
 						</ul>
@@ -532,9 +532,9 @@
 					  <td>Spear Quicken</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Works with 1 handed spear.</li>
-							<li class="skill-change">Increase ATK by 1.5% per level (rounded down).</li>
-							<li class="skill-change">Increase Hit by 3 per level.</li>
+							<li class="skill-change">Works with 1 handed spear</li>
+							<li class="skill-change">Increase ATK by 1.5% per Skill Level (rounded down).</li>
+							<li class="skill-change">Increase HIT to 3 per Skill Level</li>
 						</ul>
 					  </td>
 					</tr>	
@@ -558,7 +558,7 @@
 					  <td>Pressure</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Requirements are Faith Lv. 5</li>
+							<li class="skill-change">Requirements changed to Faith Lv. 5</li>
 							<li class="skill-change">Halve Cast Delay and Cast Time</li>
 						</ul>
 					  </td>
@@ -576,7 +576,7 @@
 				      <td>Sacrifice</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Damage is now 100 + (10 * (skill level ) (Max 1.5x  HP sacrificed to damage) from 100 + (10 * (skill level - 1)) (Max 1.4x HP sacrificed to damage</li>
+							<li class="skill-change">Damage is now 100 + (10 * (skill level ) (Max 1.5x  HP sacrificed to damage) from 100 + (10 * (skill level - 1)) (Max 1.4x HP sacrificed to damage)</li>
 							<li class="skill-change">Add VIT to damage</li>
 							<li class="skill-change">Requirements are Faith Lvl 5, Devotion Lv. 3</li>
 						</ul>
@@ -629,7 +629,7 @@
 					  <td>Napalm Beat</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Damage increased to 180% MATK to Level 10</li>
+							<li class="skill-change">Damage increased to 100 + 10 * Skill Level (Max of 200%), from 70 + (10 * Skill Level) MATK to Level 10</li>
 							<li class="skill-change">Does not split damage</li>
 							<li class="skill-change">Halve Cast Time and After Cast Delay</li>
 							<li class="skill-change">SP changed to 8/10/12/15</li>
@@ -649,7 +649,7 @@
 					  <td>Bash</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">SP requirement is now 2+1 per skill level (12 SP at level 10)</li>
+							<li class="skill-change">SP cost changed to 2 + Skill Level (12 SP at level 10)</li>
 						</ul>
 					  </td>
 					</tr>
@@ -668,7 +668,7 @@
 							<li class="skill-change">Requirements changes to Frost Bolt 3</li>
 							<li class="skill-change">Increase damage to 250% at level 10</li>
 							<li class="skill-change">Cast Delay reduced to 1 second</li>
-							<li class="skill-change">Increase SP Cost</li>
+							<li class="skill-change">Increase SP Cost to 35-20</li>
 						</ul>
 					  </td>
 					</tr>
@@ -679,7 +679,7 @@
 							<li class="skill-change">Requirements changed to Fire Bolt 3</li>
 							<li class="skill-change">Increase damage to 200% at level 10</li>
 							<li class="skill-change">Decrease After Cast and Cast to 0.8 at level 10</li>
-							<li class="skill-change">Increase SP</li>
+							<li class="skill-change">Increase SP Cost to 30</li>
 						</ul>
 					  </td>
 					</tr>
@@ -800,8 +800,8 @@
 					  <td>Napalm Vulcan</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Increase area by 5x5</li>
-							<li class="skill-change">Hits increased to 2  * Skill level</li>
+							<li class="skill-change">Set AOE to 5x5</li>
+							<li class="skill-change">Hits increased to 2 * Skill level</li>
 							<li class="skill-change">Cast and After Cast delay now increases per skill level</li>
 							<li class="skill-change">Increase SP to 20 + ( 10 * Skill Level)</li>
 						</ul>
@@ -845,7 +845,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">Increases ASPD per level by 1% per skill level</li>
 						</ul>
 					  </td>
@@ -898,7 +898,7 @@
 					  <td>Abracadabra</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Change Requirements to Autospell 3, Dispell 1(</li>
+							<li class="skill-change">Change Requirements to Autospell 3, Dispell 1</li>
 						</ul>
 					  </td>
 					</tr>	
@@ -906,7 +906,7 @@
 					  <td>Elemental Converters</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Increase converter duration to 10 minutes</li>
+							<li class="skill-change">Increase crafted elemental converters duration to 10 minutes</li>
 						</ul>
 					  </td>
 					</tr>	
@@ -1028,7 +1028,7 @@
 						<ul class="skill-change">
 							<li class="skill-change">Renamed to Survival</li>
 							<li class="skill-change">Increase damage of Dagger weapons by +5 * Skill Level</li>
-							<li class="skill-change">Increase HIT by +2 * Skill Level when equipped with a dagger</li>
+							<li class="skill-change">Increase HIT to +2 * Skill Level when equipped with a dagger</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1087,7 +1087,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">100% Walkspeed when performing at level 10</li>
 							<li class="skill-change">A Whistle, Assassin Cross of Sunset gains a bonus + 2 ATK per Skill Level buff to affected characters</li>
 						</ul>
@@ -1106,7 +1106,7 @@
 					  <td>Assassin Cross of Sunset</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Increase Critical Hit by 1% per level</li>
+							<li class="skill-change">Increase Critical HIT to 1% per level</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1140,7 +1140,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">100% Walkspeed when performing at level 10</li>
 							<li class="skill-change">Humming, Fortune's Kiss gains a bonus + 2 ATK per Skill Level buff to affected characters</li>
 						</ul>
@@ -1261,7 +1261,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Requirements changed to Heal Level 3</li>
-							<li class="skill-change">If cast on an Acolyte or a Super Novice, increases Hit by 2 per spell level.</li>
+							<li class="skill-change">If cast on an Acolyte or a Super Novice, increases HIT to 2 per spell level.</li>
 						</ul>
 					  </td>
 					</tr
@@ -1339,7 +1339,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">Ignores 1 DEF per level</li>
 						</ul>
 					  </td>
@@ -1348,7 +1348,7 @@
 					  <td>Impositio Manus</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Add 40 + 40 seconds to per level  to duration (240 seconds at level 10)</li>
+							<li class="skill-change">Add 40 + 40 seconds to per level  to duration (240 seconds at level 5)</li>
 							<li class="skill-change">Increases MATK by 3 * Skill Level</li>
 							<li class="skill-change">If cast on an Priest class, doubles bonuses recieved.</li>
 						</ul>
@@ -1359,7 +1359,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">SP cost changed to 20 + 8 * Skill Level</li>
-							<li class="skill-change">Add 40 + 40 seconds to per level  to duration (240 seconds at level 10)</li>
+							<li class="skill-change">Add 40 + 40 seconds to per level  to duration (240 seconds at level 5)</li>
 							<li class="skill-change">If cast on an Priest class, adds (INT/2) + (Base Level/2) to attack. This attack ignores DEF.</li>
 						</ul>
 					  </td>
@@ -1527,7 +1527,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">Increases ASPD per level by 1% per skill level</li>
 						</ul>
 					  </td>
@@ -1676,7 +1676,7 @@
 					  <td>Enlarge Weight Limit</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Increase STR by 1 per 2 levels</li>
+							<li class="skill-change">Increase STR by 1 every 2 Skill Level</li>
 					  </td>
 					</tr>
 					<tr>
@@ -1716,7 +1716,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Deal increase to 250% without weight, +50% depending on weight</li>
-							<li class="skill-change">Increase SP to 18</li>
+							<li class="skill-change">Increase SP Cost to 18</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1885,7 +1885,7 @@
 					  <td>Cart Termination</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Increased damage modifier to 5 at level 10</li>
+							<li class="skill-change">Increased damage modifier to 5 (Damage is Floor[Cart Weight/Damage Mod]) from 6 at level 10</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1910,7 +1910,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +6 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 						</ul>
 					  </td>
 					</tr>
@@ -2102,7 +2102,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 						</ul>
 					  </td>
 					</tr>
@@ -2194,7 +2194,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">Increases ASPD per level by 1% per skill level</li>
 						</ul>
 					  </td>
@@ -2238,7 +2238,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Damage increased to 800% at Max Level</li>
-							<li class="skill-change">Reduces by Half in PVP/WOE</li>
+							<li class="skill-change">Damage reduced by half in PVP/WOE</li>
 						</ul>
 					  </td>
 					</tr>
@@ -2255,7 +2255,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Reduce all to 3 levels</li>
-							<li class="skill-change">All of the skills are changed to Steal Coin 5</li>
+							<li class="skill-change">Skill requirements for all Strip skills changed to Steal Coin 5</li>
 						</ul>
 					  </td>
 					</tr>
@@ -2385,7 +2385,7 @@
 						<ul class="skill-change">
 							<li class="skill-change">Add skill to Star Gladiator</li>
 							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT by +2 per skill level</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
 							<li class="skill-change">Increases ASPD per level by 1% per skill level</li> 
 						</ul>
 					  </td>
@@ -2642,7 +2642,7 @@
 						<ul class="skill-change">
 							<li class="skill-change">Increased Throwing skill damage increased to 5 * Skill level</li>
 							<li class="skill-change">Mastery ATK to +5 per skill level when equipped with Huuma Shuriken</li>
-							<li class="skill-change">Increases HIT by +2 per skill level when equipped with Huuma Shuriken</li>
+							<li class="skill-change">Increases HIT to +2 per skill level when equipped with Huuma Shuriken</li>
 						</ul>
 						</td>
 					</tr>
@@ -2884,19 +2884,10 @@
 					  </td>
 					</tr>
 					<tr>
-					  <td>Throw Humma</td>
-					  <td>
-						<ul class="skill-change">
-							<li class="skill-change">Remove split damage effect</li>
-							<li class="skill-change">Decrease Cast time and Cast delay by half</li>
-						</ul>
-					  </td>
-					</tr>
-					<tr>
 					  <td>Triple Action</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Requirements to Flip the Coin Level 1</li>
+							<li class="skill-change">Requirements changed to Flip Coin Level 1</li>
 							<li class="skill-change">SP Cost reduced to 12</li>
 						</ul>
 					  </td>
@@ -2905,7 +2896,7 @@
 					  <td>Bull's Eye</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Requirements to Flip the Coin Level 5</li>
+							<li class="skill-change">Requirements changed to Flip Coin  Level 5</li>
 						</ul>
 					  </td>
 					</tr>
@@ -2913,7 +2904,7 @@
 					  <td>Madness Canceller</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Requirements to Flip the Coin Level 4</li>
+							<li class="skill-change">Requirements changed to Flip Coin  Level 4</li>
 							<li class="skill-change">Increase Damage to +150</li>
 							<li class="skill-change">Using skill again ends the effect</li>
 						</ul>
@@ -2924,7 +2915,7 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Ranged Damage reduction increased to 30%</li>
-							<li class="skill-change">Requirements to Flip the Coin Level 4</li>
+							<li class="skill-change">Requirements changed to Flip Coin  Level 4</li>
 						</ul>
 					  </td>
 					</tr>
@@ -3087,7 +3078,7 @@
 					  <td>Crimson Marker</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Track target on Minimap</li>
+							<li class="skill-change">Track target (including MVP) on Minimap</li>
 							<li class="skill-change">Reduce Enemy Flee by 10%</li>
 						</ul>
 					  </td>
