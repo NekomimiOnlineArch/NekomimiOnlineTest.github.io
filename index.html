@@ -12,6 +12,8 @@
 	}
     .skill-change ul, { 
 	  list-style-type: disc !important; 
+      text-align: center;
+      vertical-align: middle;
 	  margin-left: -20px;
 	}
 	
@@ -95,11 +97,11 @@
 			</tr>
 			<tr>
 			  <td>Episode Template and Content</td>
-			  <td>Episode 13.2, however No Satan Morroc and New World access (for now). Also, restored old Morroc and fields.</td>
+			  <td>Episode 13.2, however No Satan Morroc and New World access (for now). Also, restored old Morroc and Sograt Desert.</td>
 			</tr>
 			<tr>
 			  <td>Dungeon Access</td>
-			  <td>Pay for dungeon access if without quest.<td>
+			  <td>Pay for dungeon entrance if you haven't finished the quest granting dungeon entrance.</td>
 			</tr>
 			<tr>
 			  <td>Mechanics</td>
@@ -122,9 +124,26 @@
 			  <td>Platinum Skill unlocks at 10k Zeny per skill.</td>
 			</tr>
 			<tr>
+			  <td>Heal and Buffs NPC</td>
+			  <td>
+				<ul class="skill-change">
+					<li class="skill-change">Reduced healing from inns to 3000z</li>
+					<li class="skill-change">Full healing from NPCs available at 5000z</li>
+					<li class="skill-change">12 minute Blessing and Increase AGI plus healing available at 20000z</li>
+				</ul>
+			  </td>
+			</tr>
+			<tr>
 			  <td>Costumes</td>
-			  <td>Free!</td>
+			  <td>
+					<li class="skill-change">Hats and Garments for 1000z each</li>
+					<li class="skill-change">Body Costumes (3rd Job, JRO and 4th job) are available for free (1st job and Novice costumes disabled in WOE maps)</li>
+			  </td>
 			</tr>	
+			<tr>
+			  <td>Mounts</td>
+			  <td>Mounts will be available for 3m per character</td>
+			</tr>
 			<tr>
 			  <td>Party Limit</td>
 			  <td>15 levels apart maximum. EXP increases the more party members you have.</td>
@@ -135,7 +154,8 @@
 				<ul class="skill-change">
 					<li class="skill-change">Max ASPD: 193</li>
 					<li class="skill-change">Change Target (Attack) behavior removed</li>
-				</ul></td>
+				</ul>
+				</td>
 			</tr>				
 		  </tbody>
 		</table>
@@ -179,10 +199,11 @@
 		  </tbody>
 		</table>
 	  
+	  <br/>
 	
-	  <h1>Gameplay Changes</h1>
-	  <small>Click text to show the details</small>
-	  <div class="dropdown" :>
+	  <h1  style="margin-bottom: 1px;">Skill Changes</h1>
+	  <small style="margin-top: 1px;">Click text to show the details</small>
+	  <div class="dropdown">
 		<span class="dropdown-text" id="sd-text"> <h2>Swordsman Classes</h2></span>	
 		<hr />			
 		<div class="dropdown-content"  id="sd-content">
@@ -1254,14 +1275,14 @@
 							<li class="skill-change">If cast on an Acolyte or a Super Novice, increases HIT to 2 per spell level.</li>
 						</ul>
 					  </td>
-					</tr
+					</tr>
 					<tr>
 					  <td>Angelus</td>
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Requirements changed to Divine Protection 1 And Heal 5</li>
 							<li class="skill-change">Max HP increase changed to 100 HP per level</li>
-							<li class="skill-change">If cast on an Acolyte or a Super Novice, add 25% Soft Defense increase and Max HP per level is 125 per level.</li>
+							<li class="skill-change">If cast on an Acolyte or a Super Novice, add 25% to Soft Defense increase and set Max HP increase per skill level to 125</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1279,7 +1300,7 @@
 					  <td>Aqua Benedicta</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Skill is now instant.</li>
+							<li class="skill-change">Removed Cast Delay and Cast Time.</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1295,6 +1316,7 @@
 				</table>
 			  </div>
 			</li>
+			
 			<li>			
 			<h3>Priest</h3>
 			  <div id="table1" class="table-container active">
@@ -3251,7 +3273,45 @@
 		</div>
 	
 		</div>
-	 </div>
+	 
+	 
+	  <br/>
+	  
+	  <!-- <h1  style="margin-bottom: 1px;">Item Changes</h1> -->
+	  <!-- <small style="margin-top: 1px;">Click text to show the details</small> -->
+	  <!-- <div class="dropdown"> -->
+		
+		<!-- <span class="dropdown-text" id="1hsd-text"> <h2>1 Handed Weapons</h2></span>	 -->
+		<!-- <hr />			 -->
+		<!-- <div class="dropdown-content"  id="1hsd-content"> -->
+		  <!-- <ul style="margin-left: 30px; list-style-type: none !important; "> -->
+			<!-- <li> -->
+			  <!-- <div id="table1" class="table-container active"> -->
+				<!-- <table> -->
+				  <!-- <thead> -->
+					<!-- <tr> -->
+					  <!-- <th>Item</th> -->
+					  <!-- <th>Change</th> -->
+					<!-- </tr> -->
+				  <!-- </thead> -->
+				  <!-- <tbody> -->
+					<!-- <tr> -->
+					  <!-- <td>Test</td> -->
+					  <!-- <td> -->
+						<!-- <ul class="skill-change"> -->
+							<!-- <li class="skill-change">ATK: </li> -->
+						<!-- </ul> -->
+					  <!-- </td> -->
+					<!-- </tr> -->
+				  <!-- </tbody> -->
+				<!-- </table> -->
+			  <!-- </div> -->
+			<!-- </li> -->
+		  <!-- </ul> -->
+		<!-- </div> -->
+	   <!-- </div> -->
+	 
+	</div>
   
 	  
   <script>
@@ -3344,6 +3404,15 @@
 		}
 		else{
 			$("#sn-content").addClass("show");		
+		}
+    });
+	
+    $("#1hsd-text").click(function (event) {
+		if(  $("#1hsd-content").hasClass("show")){
+			$("#1hsd-content").removeClass("show");		
+		}
+		else{
+			$("#1hsd-content").addClass("show");		
 		}
     });
   });
