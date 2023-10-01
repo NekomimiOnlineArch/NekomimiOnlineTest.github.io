@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nekomimi Online</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <style>
+    .dropdown-content {
+	  display: none;
+	}
+	.dropdown-content.show {
+	  display: block;
+	}
+    .skill-change ul, { 
+	  list-style-type: disc !important; 
+      text-align: center;
+      vertical-align: middle;
+	  margin-left: -20px;
+	}
+	
+	ul.bullet-list {
+	  list-style-type: disc;
+	}
+	
+	table {
+	  background-color: rgba(130, 200, 130, 1); 
+	  border-collapse: collapse;
+	  border: 1px solid black;
+	}	
+	
+	table server-info {
+	  border-collapse: collapse;
+	}
+	
+	td {
+	  padding: 15px;
+	  border: 1px solid black;
+	}
+	
+	th {
+	  text-align: center;
+	}
+	
+	body {
+	  background-image: url("background.jpg"); 
+	  background-size: cover;
+	  background-attachment: fixed;
+	}
+	
+	.container {
+	  background-color: rgba(130, 180, 130, 0.9); 
+	  padding: 10px; 
+	  margin: auto;
+	  width: 90%; 
+	  border: 2px solid rgba(0, 0, 0, 0.2); 
+	  border-radius: 10px;
+	}
+	
+	.custom-table td,
+	.custom-table tr {
+	  padding-right: 20px;
+	  padding-bottom: 1px;
+	  border: 1px solid rgba(0, 0, 0, 0.2); /* Adjust the border properties as needed */
+	}
+    body {
+      font-family: Georgia, serif;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <p><span style="font-size:26px"><strong>NEKOMIMI ONLINE</strong></span></p>
+  <hr />
+  <div class="container">
+		<h1>Previous Patches</h1>
+		<small style="margin-top: 1px;">Click text to show the details</small>
+			
+		<span class="dropdown-text" id="text" name="09302023"> <h2>Patch 09/30/2023 (Beta)</h2></span>	
+		<hr />			
+		<div class="dropdown-content"  id="content" name="09302023">
+			<table class="custom-table">
+			  <tbody>
+				<tr>
+				  <td>				
+					Fixed BGM not playing.
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+					Fixed Extended Class Reset not giving proper stat points and inability to add skills when resetting as Taekwon Class Transcendent Class
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+					Added Undestroyed Morroc and Sograt Desert Fields. 
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+					Fixed certain Expanded Super Novice skill requirements (Bowling Bash, Resurrection and Gloria)				
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+					Client Change to allow longer messages				
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+					Fix Heart of Ymir not allowing Extended Class rebirth to teleport to Valkyrie				
+				  </td>
+				</tr>
+				<tr>
+				  <td>
+					Changed the following skills:	
+					<ul class="skill-change">
+						<li class="skill-change">Fury: Adds an extra 33% chance to Triple Attack trigger, and enable critical hits on Combo Attack skills, increase Critical Rate increase to +30</li>
+						<li class="skill-change">Esha: Increased movement speed reduction to 75% reduction (from 50%)</li>
+						<li class="skill-change">Mist Slash: Decrease After Cast Delay from 1 second to 0.5 second</li>
+						<li class="skill-change">Demonstration: Damage changed to 100 + 40 * Skill Level (300% at Max Level)</li>
+						<li class="skill-change">Acid Terror: Damage changed to 100 + 60 * Skill Level (400% at Max Level)</li>
+					</ul>			
+				  </td>
+				</tr>
+			  </tbody>
+			</table>	
+		</div>
+		
+  </div>
+	  
+  <script>
+  
+	
+    $(".dropdown-text").click(function (event) {
+		var attributeName = $(this).attr("name");
+	
+		if ($(".dropdown-content[name='" + attributeName + "']").hasClass("show")) {
+        $(".dropdown-content[name='" + attributeName + "']").removeClass("show");
+		} else {
+        $(".dropdown-content[name='" + attributeName + "']").addClass("show");
+		}
+    });
+  </script>
+</body>
+</html>
