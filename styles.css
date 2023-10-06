@@ -1,0 +1,113 @@
+ .greenish-table {
+	border-collapse: collapse;
+	  padding-right: 20px;
+	  padding-bottom: 1px;
+	  background-color: rgba(130, 200, 130, 1); 
+	border-radius: 10px;
+	  width: 90%; 
+	}
+
+	.greenish-table th,
+	.greenish-table td {
+		padding: 10px;
+		text-align: left;
+		border-bottom: 1px solid #fff;
+	}
+
+	.greenish-table th:first-child,
+	.greenish-table td:first-child {
+		border-top-left-radius: 10px;
+	}
+
+	.greenish-table th:last-child,
+	.greenish-table td:last-child {
+		border-top-right-radius: 10px;
+	}
+
+	.greenish-table tr:last-child td {
+		border-bottom: none;
+	}
+
+    .dropdown-content {
+	  display: none;
+	}
+	.dropdown-content.show {
+	  display: block;
+	}
+    .skill-change ul, { 
+	  list-style-type: disc !important; 
+      text-align: center;
+      vertical-align: middle;
+	  margin-left: -20px;
+	}
+	
+	ul.bullet-list {
+	  list-style-type: disc;
+	}
+	
+	table {
+	  background-color: rgba(130, 200, 130, 1); 
+	  border-collapse: collapse;
+	  border: 1px solid black;
+	}	
+	
+	table server-info {
+	  border-collapse: collapse;
+	}
+	
+	td {
+	  padding: 15px;
+	  border: 1px solid black;
+	}
+	
+	th {
+	  text-align: center;
+	}
+	
+	body {
+	  background-image: url("background.jpg"); 
+	  background-size: cover;
+	  background-attachment: fixed;
+	}
+	
+	.container {
+	  background-color: rgba(130, 180, 130, 0.9); 
+	  padding: 10px; 
+	  margin: auto;
+	  width: 90%; 
+	  border: 2px solid rgba(0, 0, 0, 0.2); 
+	  border-radius: 10px;
+	}
+	
+	.custom-table td,
+	.custom-table tr {
+	  padding-right: 20px;
+	  padding-bottom: 1px;
+	  border: 1px solid rgba(0, 0, 0, 0.2); /* Adjust the border properties as needed */
+	}
+    body {
+      font-family: Georgia, serif;
+    }
+	
+	.item-header-row {
+  display: flex; /* Use flexbox layout for the row */
+  align-items: center; /* Center the content vertically */
+  justify-content: flex-start; /* Align content to the start of the row */
+}
+
+.item-header-row .name-cell {
+  white-space: nowrap;
+  padding: 1; /* Removes any padding */
+  border: none; /* Removes the border */
+   align-self: flex-end; /* Align the ID cell to the bottom of the row */
+}
+
+.item-header-row .id-text {
+  color: gray; /* Sets the text color to gray */
+  font-style: italic; /* Applies italic font style */
+  font-size: 9px; /* Sets the font size to 9 pixels */
+  margin-bottom: 13px; /* Adjust the margin as needed to create spacing between Name and ID */
+  padding: 0; /* Removes any padding */
+  border: none; /* Removes the border */
+   align-self: flex-end; /* Align the ID cell to the bottom of the row */
+}

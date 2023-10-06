@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nekomimi Online</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <p><span style="font-size:26px"><strong>NEKOMIMI ONLINE</strong></span></p>
+  <hr />
+  <div class="container">
+	
+	<div id="item-containers"></div>
+		
+		
+  </div>
+	  
+  
+  <script src="data/item_db.js">
+  </script>
+     <script>
+    $(document).ready(function() {
+		console.log(itemDB);
+		buildDBTable(itemDB);
+	});
+	
+	function buildDBTable(jsonData) {
+         $.each(jsonData, function(key, itemData) {
+            var table = $('<table>').addClass('greenish-table');
+            var caption = $('<caption>').text('Item ' + key);
+            var tbody = $('<tbody>');
+
+
+			var firstRow = $('<tr>').addClass('item-header-row');			
+			var nameCell = $('<td>').addClass('name-cell').append($('<img>').attr('src', 'image/item/' + itemData.Id + '.gif').attr('style', 'width: 16px; height: 16px;')).append($('<strong>').text(' ' +itemData.Name));
+			var idCell = $('<td>').html('(ID: <em>' + itemData.Id + '</em>)').addClass('id-text');
+            firstRow.append(nameCell, idCell);
+            tbody.append(firstRow);
+
+            // Append table components to the container
+            table.append(caption, tbody);
+            $('#item-containers').append(table);
+        });
+	}
+    </script>
+</body>
+</html>
