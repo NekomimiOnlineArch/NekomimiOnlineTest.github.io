@@ -7,8 +7,17 @@
 </head>
 
 <body>
-  <p><span style="font-size:26px"><strong>NEKOMIMI ONLINE</strong></span></p>
-  <hr />
+<header>
+  <p><span style="font-size:26px; padding: 10px; text-align: center; height: 100vh;"><strong>NEKOMIMI ONLINE</strong></span>
+  </p>
+  
+  <a href=" https://discord.gg/uWsdKaBy4a">
+ 
+  <img src="image\icon\discord-icon.png" class="header-image">
+  </a>
+</header>
+
+<br/>
   <div class="container">
 	  <h1>Server Info</h1>
 		<table class="custom-table">
@@ -108,6 +117,7 @@
 					<li class="skill-change"><a href="https://drive.google.com/file/d/1DQbaTT-bPokhKSHPV1YKkPWKxC09m5cH/view?usp=drive_link">Google Drive</a></li>
 					<li class="skill-change"><a href="https://mega.nz/file/OypCnZxZ#64ji8SAg584_Y65tDGyWWKyCjpyOh3xPmP3ta_qQLMM">MEGA</a></li>
 				</ul>
+				<small>DLLs in case your download crashes/whitescreens <a href="https://drive.google.com/file/d/1Eu1OS_rHenenEVddt2p8fxZjYslpMRpD/view?usp=sharing">here</a></small>
 			  </td>
 			</tr>
 			<tr>
@@ -145,67 +155,52 @@
 	
 	
 	  <h1>Current Patch</h1>
-	    <h2>Patch 10/15/2023</h2>
+	    <h2>Patch 10/17/2023</h2>
 		<small>Update before playing! Previous patches can be seen <a href="patches.html">here</a></small>
 		<table class="custom-table">
 		  <tbody>
 			<tr> 
 			  <td>
-				Fixed High Taekwon losing their rebirth status when resetting skills. Taekwon Rankers now get their HP/SP bonuses on level 60.			
+				Fixed Ankle Snare being able to be moved under foot.			
 			  </td>
 			</tr>  
 			<tr>
 			  <td>
 				Changed the following skills:	
-				<ul class="skill-change">
-					<li class="skill-change">Thief: 						
-						<ul class="skill-change">
-							<li class="skill-change">Sword Mastery: Moved down from Rogue.</li>
-						</ul>					
-					</li>
+				<ul class="skill-change">	
 					<li class="skill-change">Assassin: 						
 						<ul class="skill-change">
-							<li class="skill-change">Bash: Gain Bash Skill. Bash can now be doubled by Double Attack. This applies to Swordsman's bash as well.</li>
-							<li class="skill-change">Reduced Enchant Poison and Venom Dust by 5 points, effects scaled accordingly</li>
-							<li class="skill-change">Venom Splasher - Reduced cooldown to 0.5 seconds, and reduced time to always be 5 seconds, and removed cast time.</li>
-						</ul>	
+							<li class="skill-change">Bash: Changed Double Attack procs only being able to be triggered by dual wielders, and requires daggers (or a Sword or Axe with a Sidewinder card).</li>
+							<li class="skill-change">Sonic Blow: Changed Damage to 400 + (60 * Skill level) (1000% at Max Level), and restored aftercast delay to 2 seconds.</li>
+							<li class="skill-change">Enchant Poison: When under Enchant Poison effect, increases critical damage by 2% per level</li>
+						</ul>					
 					</li>
 					<li class="skill-change">Assassin Cross: 						
 						<ul class="skill-change">
-							<li class="skill-change">Counter Attack (Auto Counter): Add this skill.</li>
-						</ul>	
+							<li class="skill-change">Soul Breaker: Reduced Enchant Poison requirement, reduced cast time and cast delay.</li>
+							<li class="skill-change">Enchant Deadly Poison: Soul Breaker and Meteor Assault are now affected, but with reduced values (by half).</li>
+						</ul>					
 					</li>
+					<li class="skill-change">Clown/Gypsy: 						
+						<ul class="skill-change">
+							<li class="skill-change">Added Metallic Sound Skill. 50 + (Skill Level * 50) damage (Max at 300% Damage) Magical Neutral damage that can be used while performing.</li>
+						</ul>	
+					</li>	
 					<li class="skill-change">Gunslinger: 						
 						<ul class="skill-change">
-							<li class="skill-change">Spread Attack: SP Cost reduced to 4 + (4* Skill level)</li>
-							<li class="skill-change">Full Buster: SP Cost reduced to 4 * Skill Level, After cast delay at 1.2 seconds at all levels.</li>
-							<li class="skill-change">Dust: SP Cost reduced to 2 * Skill Level</li>
-							<li class="skill-change">Rapid Shower: SP cost reduced to 10 + (2* Skill level)</li>
-							<li class="skill-change">Tracking: SP cost reduced to 5 + (4* Skill level)</li>
+							<li class="skill-change">Full Buster: After Cast delay restored to old value, but moved to cooldown.</li>
 						</ul>	
-					</li>
-					<li class="skill-change">Hunter: 						
+					</li>					
+					<li class="skill-change">Blacksmith and Alchemist: 						
 						<ul class="skill-change">
-							<li class="skill-change">Traps: Land Mine, Claymore Trap and Blast Mine damage increased, all three skills costs 10 SP to cast, and you can now put all traps under monsters except Ankle Snare.</li>
-							<li class="skill-change">Steel Crow: Bonus Damage increased to +8 per level, and adds Strength Scaling to Blitz Beat.</li>
-							<li class="skill-change">Blitz Beat: When using Dagger, Blitz Beats chance is doubled (LUK * 0.6)</li>
-						</ul>	
-					</li>
-					<li class="skill-change">Dancer/Bard: 						
+							<li class="skill-change">Increased base HP.</li>
+						</ul>					
+					</li>				
+					<li class="skill-change">Alchemist: 						
 						<ul class="skill-change">
-							<li class="skill-change">Musical Strike/Throw Arrow: Removed Cast Time, Increased SP Costs to 3 + (3* Skill level)</li>
-							<li class="skill-change">Arrow Vulcan: Can be used while performing, decreased base cast time to one second (+0.2 per level), decreased after cast delay by 1 second</li>
-						</ul>	
-					</li>
-					<li class="skill-change">Star Gladiator: 						
-						<ul class="skill-change">
-							<li class="skill-change">Warmth of the Moon: Now deals 50% Magical Damage.</li>
-							<li class="skill-change">Warmth of the Stars: Now deals 70% Neutral damage that increases with DEX and LUK (increases by (DEX/3 + LUK/3) %)</li>
-						</ul>	
-					</li>
-					<li class="skill-change">Merchant: 						
-						<ul class="skill-change">
-							<li class="skill-change">Overcharge money drop on monster kill reduced.</li>
+							<li class="skill-change">Acid Terror and Demonstration: Levels increased to 10, increasing damage. Level 6 and up has 0.5 second cast time. Easy Bottles expanded to 1-4 levels.</li>
+							<li class="skill-change">Acid Terror: Damage increased to 100 + 70 * Skill level (800% damage at Max Level)</li>
+							<li class="skill-change">Demonstration: Damage increased to 100 + 50 * Skill level (600% damage at Max Level)</li>
 						</ul>	
 					</li>
 				</ul>
@@ -1024,10 +1019,18 @@
 				  </thead>
 				  <tbody>
 					<tr>
+					  <td>Traps</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">All traps can now be put under monsters except Ankle Snare</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
 					  <td>Land Mine</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">New Damage Formula: [ DEX + ( INT * 2 ) + 75 ] * Skill Level</li>
+							<li class="skill-change">New Damage Formula: [ (DEX * 2) + ( INT * 3 ) + 150 ] * (Skill Level + 2)</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1036,7 +1039,8 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Costs only 1 Trap</li>						
-							<li class="skill-change">New Damage Formula: [ DEX + ( INT * 1.5 )  + 20] * Skill Level</li>
+							<li class="skill-change">New Damage Formula: [ (DEX * 2) + ( INT * 2.5 )  + 100] * (Skill Level + 2)</li>			
+							<li class="skill-change">SP Costs reduced to 10</li>							
 						</ul>
 					  </td>
 					</tr>
@@ -1044,7 +1048,8 @@
 					  <td>Blast Mine</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">New Damage Formula: DEX + ( INT * 1.25 ) ] * Skill Level</li>
+							<li class="skill-change">New Damage Formula: [ (DEX * 2)+ ( INT * 2 ) + 50 ] * (Skill Level + 2)</li>		
+							<li class="skill-change">SP Costs reduced to 10</li>							
 						</ul>
 					  </td>
 					</tr>
@@ -1064,7 +1069,17 @@
 						<ul class="skill-change">
 							<li class="skill-change">Auto-Blitz Beat can be triggered by Dagger auto-attacks</li>
 							<li class="skill-change">Automatic Blitz Beat no longer gets it's damage split between targets</li>
+							<li class="skill-change">When using Dagger, Auto-Blitz chance increased (LUK * 0.6)</li>
 							<li class="skill-change">Cast Time of Manual Blitz Beat reduced to 1 second</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Steel Crow</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Bonus Damage increased to +8 per level</li>
+							<li class="skill-change">Adds Strength Scaling to Blitz Beat</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1124,7 +1139,8 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Damage to 150 + (40 * (Skill Level - 1)% (Max Damage of 310% at level 5)</li>
-							<li class="skill-change">Cast time to 1 second</li>
+							<li class="skill-change">Removed Cast Time</li>
+							<li class="skill-change">Increased SP Costs to 3 + (3* Skill level)</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1177,7 +1193,8 @@
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Damage to 150 + (40 * (Skill Level - 1)% (Max Damage of 310% at level 5)</li>
-							<li class="skill-change">Cast time to 1 second</li>
+							<li class="skill-change">Removed Cast Time</li>
+							<li class="skill-change">Increased SP Costs to 3 + (3* Skill level)</li>
 						</ul>
 					  </td>
 					</tr>
@@ -1222,6 +1239,16 @@
 					</tr>
 				  </thead>
 				  <tbody>
+					<tr>
+					  <td>Arrow Vulcan</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Can be used while performing</li
+							<li class="skill-change">Cast Time changed to 1 Second (+0.2 seconds per level)</li>
+							<li class="skill-change">After Cast Delay reduced by 1 second</li>
+						</ul>
+					  </td>
+					</tr>
 					<tr>
 					  <td>Tarot</td>
 					  <td>
@@ -2205,6 +2232,17 @@
 				  </thead>
 				  <tbody>
 					<tr>
+					  <td>Sword Mastery</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Moved down from Rogue</li>
+							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
+							<li class="skill-change">Increases HIT to +2 per skill level</li>
+							<li class="skill-change">Increases ASPD per level by 1% per skill level</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
 					  <td>Double Attack</td>
 					  <td>
 						<ul class="skill-change">
@@ -2272,6 +2310,16 @@
 				  </thead>
 				  <tbody>
 					<tr>
+					  <td>Bash</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Gain Skill</li>
+							<li class="skill-change">Can trigger double attack if character is dual wielding and using dagger (or a Sword or Axe with Sidewinder)</li>
+							<li class="skill-change">SP cost is now 2 + Skill Level SP (12 SP at level 10)</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
 					  <td>Katar Mastery</td>
 					  <td>
 						<ul class="skill-change">
@@ -2284,8 +2332,8 @@
 					  <td>Sonic Blow</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Damage increased to 400 + (50 * Skill level) (900% at Max Level)</li>
-							<li class="skill-change">Reduce Cast delay to 1.5 second</li>
+							<li class="skill-change">Damage increased to 400 + (60 * Skill level) (1000% at Max Level)</li>
+							<li class="skill-change">Reduce SP Cost to 10 + (2*Skill level)</li>
 						</ul>
 					  </td>
 					</tr>
@@ -2293,7 +2341,17 @@
 					  <td>Venom Dust</td>
 					  <td>
 						<ul class="skill-change">
+							<li class="skill-change">Reduced Skill Level to 5, effects condensed accordingly</li>
 							<li class="skill-change">No longer requires Red Gemstone</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Enchant Poison</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Reduced Skill Level to 5, effects condensed accordingly</li>
+							<li class="skill-change">Increase Critical Damage by 2% per level.</li>
 						</ul>
 					  </td>
 					</tr>
@@ -2301,7 +2359,11 @@
 					  <td>Venom Splasher</td>
 					  <td>
 						<ul class="skill-change">
+							<li class="skill-change">Damage now affected by Enchant Deadly Poison</li>
 							<li class="skill-change">Remove the HP requirement</li>
+							<li class="skill-change">Remove Cast Time</li>
+							<li class="skill-change">Reduce Explosion countdown to 5 seconds on all levels</li>
+							<li class="skill-change">Cooldown reduced to 0.5 Seconds</li>
 							<li class="skill-change">Increase cell range to 3</li>
 						</ul>
 					  </td>
@@ -2332,18 +2394,39 @@
 				  </thead>
 				  <tbody>
 					<tr>
+					  <td>Auto Counter</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Add this skill</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
 					  <td>Meteor Assault</td>
 					  <td>
 						<ul class="skill-change">
+							<li class="skill-change">Damage now affected by Enchant Deadly Poison (at half effect)</li>
 							<li class="skill-change">Change damage to 100 + (50 * Skill Level)(600% at max level)</li>
 						</ul>
 					  </td>
 					</tr>
 					<tr>
-					  <td>Enchant Deadly Poison</td>
+					  <td>Soul Destroyer</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Poison creation chance is now 20 + (Base Level / 2) + (Job Level / 2) + LUK</li>
+							<li class="skill-change">Enchant Poison requirement changed to level 5</li>
+							<li class="skill-change">SP Cost is 20 at all levels</li>
+							<li class="skill-change">Cast time reduced to 0.3 Seconds from 0.7</li>
+							<li class="skill-change">After Cast Delay reduced to 1 Second at all levels</li>
+							<li class="skill-change">Damage now affected by Enchant Deadly Poison (at half effect)</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Create Poison</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Poison creation chance is now 5 + (Base Level / 2) + (Job Level / 2) + LUK</li>
 						</ul>
 					  </td>
 					</tr>
@@ -2363,16 +2446,6 @@
 					</tr>
 				  </thead>
 				  <tbody>
-					<tr>
-					  <td>Sword Mastery</td>
-					  <td>
-						<ul class="skill-change">
-							<li class="skill-change">Mastery ATK to +5 per skill level from +4</li>
-							<li class="skill-change">Increases HIT to +2 per skill level</li>
-							<li class="skill-change">Increases ASPD per level by 1% per skill level</li>
-						</ul>
-					  </td>
-					</tr>
 					<tr>
 					  <td>Owl's Eye</td>
 					  <td>
@@ -2588,6 +2661,22 @@
 					  </td>
 					</tr>
 					<tr>
+					  <td>Warmth of the Moon</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Damage becomes 50% Magical Damage</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
+					  <td>Warmth of the Stars</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">Damage becomes 70% Neutral damage that increases with DEX and LUK (increases by (DEX/3 + LUK/3) %)</</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
 					  <td>Advanced Book</td>
 					  <td>
 						<ul class="skill-change">
@@ -2598,6 +2687,7 @@
 						</ul>
 					  </td>
 					</tr>
+					
 					</tbody>
 				</table>
 			  </div>
@@ -3156,12 +3246,21 @@
 					  </td>
 					</tr>
 					<tr>
+					  <td>Rapid Shower</td>
+					  <td>
+						<ul class="skill-change">
+							<li class="skill-change">SP cost reduced to 10 + (2* Skill level)</li>
+						</ul>
+					  </td>
+					</tr>
+					<tr>
 					  <td>Tracking</td>
 					  <td>
 						<ul class="skill-change">
 							<li class="skill-change">Tracking cast time is reduced based on level, end in 1 second cast</li>
 							<li class="skill-change">Increase ranged with Snake Eyes</li>
 							<li class="skill-change">Extra Damage when equipped with Rifle</li>
+							<li class="skill-change">SP cost reduced to 5 + (4* Skill level)</li>
 						</ul>
 					  </td>
 					</tr>
@@ -3189,6 +3288,8 @@
 						<ul class="skill-change">
 							<li class="skill-change">Remove blind chance</li>
 							<li class="skill-change">Reduced Ammo consumption 5 Bullets (fixed)</li>
+							<li class="skill-change">SP Cost reduced to 4 * Skill Level, After cast delay at 1.2 seconds at all levels.</li>
+							<li class="skill-change">After Cast Delay changed to Cooldown.</li>
 						</ul>
 					  </td>
 					</tr>
@@ -3199,6 +3300,7 @@
 							<li class="skill-change">Increase range to 5</li>
 							<li class="skill-change">Removed Cast Time</li>
 							<li class="skill-change">After cast delay reduced to 0.5 seconds</li>
+							<li class="skill-change">SP Cost reduced to 2 * Skill Level</li>
 						</ul>
 					  </td>
 					</tr>
@@ -3206,9 +3308,10 @@
 					  <td>Spread Attack</td>
 					  <td>
 						<ul class="skill-change">
-							<li class="skill-change">Damage at increased at max level to 200 + (10 * Skill Level) % (300% damage at max Level)</li>
+							<li class="skill-change">Damage at increased at max level to 200 + (20 * Skill Level) % (400% damage at max Level)</li>
 							<li class="skill-change">Damage increased to 300 + (30 * Skill Level) % (600% damage at max Level) when equppied with Grenade Launcher</li>
 							<li class="skill-change">Reduced cost to 1 Bullet</li>
+							<li class="skill-change">SP Cost reduced to 4 + (4* Skill level)</li>
 						</ul>
 					  </td>
 					</tr>	
@@ -3586,6 +3689,7 @@
 		}
     });
   });
+  
   </script>
 </body>
 </html>
