@@ -90,24 +90,33 @@
     }
 	
 	.item-header-row {
-  display: flex; /* Use flexbox layout for the row */
-  align-items: center; /* Center the content vertically */
-  justify-content: flex-start; /* Align content to the start of the row */
-}
+	  display: flex; 
+	  align-items: center; 
+	  justify-content: flex-start; /* Align content to the start of the row */
+	}
 
-.item-header-row .name-cell {
-  white-space: nowrap;
-  padding: 1; /* Removes any padding */
-  border: none; /* Removes the border */
-   align-self: flex-end; /* Align the ID cell to the bottom of the row */
-}
+	.item-header-row .name-cell {
+	  white-space: nowrap;
+	  padding: 1; 
+	  border: none;
+	  align-items: center; 
+	  align-self: flex-end; 
+	}
 
-.item-header-row .id-text {
-  color: gray; /* Sets the text color to gray */
-  font-style: italic; /* Applies italic font style */
-  font-size: 9px; /* Sets the font size to 9 pixels */
-  margin-bottom: 13px; /* Adjust the margin as needed to create spacing between Name and ID */
-  padding: 0; /* Removes any padding */
-  border: none; /* Removes the border */
-   align-self: flex-end; /* Align the ID cell to the bottom of the row */
-}
+	.item-header-row .id-text {
+	  color: gray;
+	  font-style: italic; 
+	  font-size: 9px; 
+	  margin-bottom: 13px; 
+	  padding: 0; 
+	  border: none; 
+	   align-self: flex-end; 
+	}
+
+	.bmp-container {
+	  width: 200px;
+	  height: 200px;
+	  border: 2px solid black;
+	  background-image: url('path/to/your/image.bmp');
+	  background-color: rgba(255, 0, 0, 0); /* Set the RGB value you want to be transparent */
+	}
