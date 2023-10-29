@@ -33,7 +33,7 @@
 
 
 			var firstRow = $('<tr>').addClass('item-header-row');			
-			var nameCell = $('<td>').addClass('name-cell').append($('<img>').attr('src', 'image/item/' + itemData.Id + '.gif').attr('style', 'width: 16px; height: 16px;')).append($('<strong>').text(' ' +itemData.Name));
+			var nameCell = $('<td>').addClass('name-cell').append($('<img>').attr('src', 'image/item/' + itemData.Id + '.gif').attr('style', 'width: 24px; height: 24px; border: 1px solid black;')).append($('<strong>').text(' ' +itemData.Name));
 			var idCell = $('<td>').html('(ID: <em>' + itemData.Id + '</em>)').addClass('id-text');
             firstRow.append(nameCell, idCell);
             tbody.append(firstRow);
